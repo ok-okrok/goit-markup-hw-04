@@ -149,7 +149,7 @@ fill: var(--animation-theme-color);
 
 .main-section .container {
     height: 600px;
-    width: 1600px;
+    max-width: 1600px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -371,7 +371,7 @@ fill: var(--animation-theme-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: rgba(175,177,184,1);
+  fill: rgba(175, 177, 184, 1);
 }
 
 .social-link:hover,
@@ -418,24 +418,29 @@ justify-content: space-between;
 
 .cust-list-link {
 display: flex;
-width: 170px;
-height: 90px;
-justify-content: center;
-align-items: center;
-border: 1px solid rgba(175, 177, 184, 1);
+}
+
+.cust-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
 }
 
 .cust-list-svg {
   fill: rgba(175,177,184,1);
 }
 
-.cust-list-link:hover .cust-list-svg,
-.cust-list-link:focus .cust-list-svg {
+.cust-link:hover .cust-list-svg,
+.cust-link:focus .cust-list-svg {
   fill: var(--animation-theme-color);
 }
 
-.cust-list-link:hover,
-.cust-list-link:focus {
+.cust-link:hover,
+.cust-link:focus {
   border: 1px solid var(--animation-theme-color);
 }
 
@@ -619,5 +624,4 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   letter-spacing: 0.03em;
   color: var(--text-theme-color);
 }
-
 /*  ============ End portfolio-project  ============ */
